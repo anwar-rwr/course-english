@@ -746,9 +746,9 @@ nav {
   }
 }
 
-footer {
+/* footer {
   background-color: white;
-}
+} */
 
 @media (width < 600px) {
   .nav__links {
@@ -789,3 +789,63 @@ footer {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+
+/*  */
+@media (max-width: 768px) {
+    /* Menyembunyikan gambar pada ukuran layar di bawah 768px */
+    #about img {
+      display: none;
+    }
+  }
+
+  /*  */
+  .footer__container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .footer__col {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .footer__col h4 {
+    color: #fff;
+  }
+  
+  .footer__col ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer__col ul li {
+    margin-bottom: 10px;
+  }
+  
+  .footer__socials span {
+    margin: 0 10px;
+  }
+  
+  .footer__bar {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+  }
+  
+  /*  */
+  /* Tambahkan CSS responsif untuk footer */
+@media (max-width: 768px) {
+    .footer__container {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .footer__col {
+      text-align: left;
+      margin-bottom: 20px;
+    }
+  }
+  
